@@ -1,0 +1,3 @@
+[submodule "lib/iot"]
+	path = lib/iot
+	url = https://github.com/dotnet/iot.git
