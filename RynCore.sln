@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RynCore", "RynCore\RynCore.csproj", "{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RynComm", "RynComm", "{2589E120-EF1D-4BD7-B2B6-08A46C885E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DC.Lora", "RynComm\DC.Lora\DC.Lora.csproj", "{E372DB26-CF7D-45B8-9C9E-41F892624B7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A13C1E4D-8F35-4501-A0F3-1BC88D584BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ryn.ChisteraPi", "Common\Ryn.ChisteraPi\Ryn.ChisteraPi.csproj", "{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Linux-Debug|Any CPU = Linux-Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Windows-Debug|Any CPU = Windows-Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}.Linux-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}.Linux-Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}.Windows-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349CF68C-A3A8-48CD-AE66-C8DFABB242F9}.Windows-Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F}.Linux-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F}.Linux-Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F}.Windows-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F}.Windows-Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}.Linux-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}.Linux-Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}.Windows-Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44}.Windows-Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E372DB26-CF7D-45B8-9C9E-41F892624B7F} = {2589E120-EF1D-4BD7-B2B6-08A46C885E19}
+		{824FDAF1-1BAA-450B-A1FC-AC8DD7783B44} = {A13C1E4D-8F35-4501-A0F3-1BC88D584BEB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65102221-52CF-426C-B95D-7A5B05062B40}
+	EndGlobalSection
+EndGlobal

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RF95
+namespace Ryn.ChisteraPi
 {
-    class Rf95Constants
+    class ChisteraPiConstants
     {
         // This is the maximum number of interrupts the driver can support
         // Most Arduinos can handle 2, Megas can handle more
