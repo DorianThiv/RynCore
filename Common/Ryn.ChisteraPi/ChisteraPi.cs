@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Text;
 using Unosquare.RaspberryIO;
+using Unosquare.RaspberryIO.Abstractions;
 using Unosquare.WiringPi;
 
 namespace Ryn.ChisteraPi
@@ -34,23 +36,25 @@ namespace Ryn.ChisteraPi
         /// True when there is a valid message in the buffer
         private volatile bool _rxBufValid;
 
-        public ChisteraPi() { }
-
-        public ChisteraPi(short slaveSelectPin, short interruptPin) { }
+        public ChisteraPi()
+        {
+            Pi.Init<BootstrapWiringPi>();
+        }
 
         public bool Init()
         {
-            Console.WriteLine("Initializing /dev/spidev0.0 ...");
+            Console.WriteLine("Initializing Spi ...");
+            Console.WriteLine(Pi.Info);
             Pi.Spi.Channel0Frequency = SpiChannel.MinFrequency;
-            var request = System.Text.Encoding.ASCII.GetBytes("HELLO!");
+            var request = Encoding.ASCII.GetBytes("Initialization ...");
             var response = Pi.Spi.Channel0.SendReceive(request);
-            Console.WriteLine(response.ToString());
+            Console.WriteLine($"Response length : {response.Length}");
             return true;
         }
 
         public void HandleInterrupt()
         {
-
+            Console.WriteLine($"Pin interupt");
         }
 
         public void Isr0()
