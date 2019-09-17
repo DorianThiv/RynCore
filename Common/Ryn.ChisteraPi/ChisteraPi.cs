@@ -45,6 +45,7 @@ namespace Ryn.ChisteraPi
         {
             Console.WriteLine("Initializing Spi ...");
             Console.WriteLine(Pi.Info);
+            var pin = Pi.Gpio[BcmPin.Gpio24];
             Pi.Spi.Channel0Frequency = SpiChannel.MinFrequency;
             var request = Encoding.ASCII.GetBytes("Initialization ...");
             var response = Pi.Spi.Channel0.SendReceive(request);
